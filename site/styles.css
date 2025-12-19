@@ -293,6 +293,10 @@ main {
   margin: 0 auto;
 }
 
+.section.full-width {
+  max-width: none;
+}
+
 .section-header {
   margin-bottom: 1.5rem;
 }
@@ -351,11 +355,20 @@ main {
 }
 
 .icon-slot {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  border: 1px dashed rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.02);
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  border: 1px solid rgba(128, 255, 211, 0.45);
+  background: radial-gradient(circle at 30% 30%, rgba(128, 255, 211, 0.25), rgba(255, 255, 255, 0.05));
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.icon-slot svg {
+  width: 70%;
+  height: 70%;
 }
 
 .image-slot {
